@@ -36,21 +36,21 @@ export default function NavBar({ onButtonClick, onSubmit }: NavbarProps) {
             {/* Custom screen setter */}
             <div className="">
                 <input
-                    className="w-14 mx-4 rounded text-black-500 p-0.5"
+                    className="w-14 mx-4 rounded text-black-500 p-0.5 border-solid border-teal-500 border-2"
                     placeholder="width"
                     type="text"
                     onChange={(e) => setWidth(e.target.value)} />
                 <input
-                    className="w-14 mx-4 rounded text-black-500 p-0.5"
+                    className="w-14 mr-4 rounded text-black-500 p-0.5 border-solid border-teal-500 border-2"
                     placeholder="height"
                     type="text"
                     onChange={(e) => setHeight(e.target.value)} />
-                <button className="text-center text-base text-teal-400 bg-teal-200 p-1.5 m-1.5 rounded hover:bg-teal-400 hover:text-teal-200" onClick={() => handleButtonClick(inputHeight, inputWidth)}>Set</button>
+                <button className="text-center text-base text-teal-400 bg-teal-200 p-1.5 m-1.5 rounded hover:bg-teal-400 hover:text-teal-200 " onClick={() => handleButtonClick(inputHeight, inputWidth)}>Set</button>
             </div>
             {/* website search bar */}
             <div>
                 <input
-                    className="ml-4 p-0.5 rounded text-black-500"
+                    className="ml-4 p-0.5 rounded text-black-500 border-solid border-teal-500 border-2"
                     type="text"
                     placeholder="Enter website URL"
                     onChange={(e) => setUrl(e.target.value)}
