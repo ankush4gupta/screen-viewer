@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+// import colors from 'tailwindcss/colors'
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,7 +7,18 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+
     extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        teal: {
+          100: '#E3FEF7',
+          200: '#77B0AA',
+          300: '#135D66',
+          400: '#003C43'
+        }
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

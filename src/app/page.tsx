@@ -7,7 +7,7 @@ export default function Home() {
   const iframeRef = useRef(null);
   const [websiteUrl, setWebsiteUrl] = useState("");
   const handleButtonClick = (height: string, width: string) => {
-    console.log(height,width)
+    console.log(height, width)
     setIframeHeight(height);
     setIframeWidth(width);
   };
@@ -20,30 +20,32 @@ export default function Home() {
     setWebsiteUrl(url);
   };
   return (
-    <main>
+    <main className="">
       <div>
         <NavBar onSubmit={handleNavbarUrlSubmit} onButtonClick={handleButtonClick} />
-       
-          <iframe 
-          src={websiteUrl}
-          className="border-solid border-black border-2"
+
+        <div className="flex justify-center">
+          <iframe
+            src={websiteUrl}
+            className="bg-teal-200"
             style={{ width: `${iframeWidth}px`, height: `${iframeHeight}px` }}
             title="Preview"
           />
-        
+        </div>
+
       </div>
 
-      
 
-     
-        
 
-        
 
-        
 
-        
-    
+
+
+
+
+
+
+
     </main>
   );
 }
