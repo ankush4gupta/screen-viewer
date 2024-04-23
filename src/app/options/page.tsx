@@ -1,7 +1,7 @@
 import { GoDeviceDesktop, GoDeviceMobile } from "react-icons/go";
 import { MdTabletAndroid } from "react-icons/md";
 import { IoIosPhonePortrait } from "react-icons/io";
-import { IoIosSearch } from "react-icons/io";
+
 import { TbDeviceIpad } from "react-icons/tb";
 import "./button.css";
 interface ButtonProps {
@@ -11,16 +11,16 @@ interface ButtonProps {
 
 export default function Options({ name,onClick }: ButtonProps) {
     const iconComponent: { [name: string]: any } = {
-        Desktop: <GoDeviceDesktop />,
-        Mobile: <IoIosPhonePortrait />,
-        Tab: <MdTabletAndroid />,
-        Ipad: <TbDeviceIpad />
+        Desktop: GoDeviceDesktop,
+        Mobile: IoIosPhonePortrait,
+        Tab: MdTabletAndroid,
+        Ipad: TbDeviceIpad
 
         // Add more mappings as needed
     };
     const IconComponent = iconComponent[name];
     return (
-       
-        <button onClick={onClick} className="" > {IconComponent}</button > 
+
+        <button onClick={onClick} className="p-2 duration-100 ease-in-out hover:ring-blue-800 hover:ring-2 rounded-full transition  hover:bg-white/20 mx-3" > {<IconComponent size ="2.5rem" color="white"/>}</button > 
     );
 }
