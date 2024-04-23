@@ -9,6 +9,9 @@ const config: Config = {
   theme: {
 
     extend: {
+      backgroundImage:{
+        '1st' : "url('/src/app/images/1st.gif')"
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
