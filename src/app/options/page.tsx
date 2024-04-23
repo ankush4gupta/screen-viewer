@@ -20,7 +20,7 @@ export default function Options({ name,onClick }: ButtonProps) {
     };
     const IconComponent = iconComponent[name];
     return (
-       
-        <button onClick={onClick} className="border-solid border-2 border-teal mx-5" > {<IconComponent size ="2.5rem" color="white"/>}</button > 
+
+        <button onClick={onClick} className="p-2 duration-100 ease-in-out hover:ring-blue-800 hover:ring-2 rounded-full transition  hover:bg-white/20 mx-3" > {<IconComponent size ="2.5rem" color="white"/>}</button > 
     );
 }
