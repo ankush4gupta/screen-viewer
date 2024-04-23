@@ -25,7 +25,7 @@ export default function NavBar({ onButtonClick, onSubmit }: NavbarProps) {
     };
 
     return (
-        <nav className="sticky top-0 bg-teal-100 flex justify-items-center items-center">
+        <nav className="z-10 sticky top-0 bg-teal-100 flex justify-items-center items-center">
             {/* default screen options */}
             <div>
                 <Options name="Mobile" onClick={() => handleButtonClick('568', '320')} />
