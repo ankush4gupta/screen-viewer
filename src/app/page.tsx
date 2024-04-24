@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import NavBar from "./navbar/page";
+import NavBar from "./navbar/nav";
 export default function Home() {
   const [iframeHeight, setIframeHeight] = useState<string>('600');
   const [iframeWidth, setIframeWidth] = useState<string>('800');

@@ -1,15 +1,13 @@
+"use client"
 import { GoDeviceDesktop } from "react-icons/go";
 import { MdTabletAndroid } from "react-icons/md";
 import { IoIosPhonePortrait } from "react-icons/io";
 
 import { TbDeviceIpad } from "react-icons/tb";
 
-interface ButtonProps {
-    name: string;
-    onClick: () => void;
-}
 
-export default function Options({ name,onClick }: ButtonProps) {
+
+export default function Options({ name,onClick }: any) {
     const iconComponent: { [name: string]: any } = {
         Desktop: GoDeviceDesktop,
         Mobile: IoIosPhonePortrait,
