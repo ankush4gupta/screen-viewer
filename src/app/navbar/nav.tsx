@@ -1,14 +1,12 @@
-import Options from "../options/page";
+'use client'
+import Options from "../options/option";
 import { useState } from "react";
 import { IoIosSearch } from "react-icons/io";
 import { TbHandClick } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import Image from 'next/image'
-interface NavbarProps {
-    onButtonClick: (height: string, width: string) => void;
-    onSubmit: any
-}
-export default function NavBar({ onButtonClick, onSubmit }: NavbarProps) {
+
+export default function NavBar({ onButtonClick, onSubmit }: any) {
     const [inputHeight, setHeight] = useState<string>('');
     const [inputWidth, setWidth] = useState<string>('');
     const [url, setUrl] = useState<string>('');
@@ -16,7 +14,7 @@ export default function NavBar({ onButtonClick, onSubmit }: NavbarProps) {
         onButtonClick(height, width);
     };
     const handleRedirect = () => {
-        window.open('https://github.com/ankush4gupta/screen-viewer','_blank'); // Replace 'your-github-username' with your actual GitHub username
+        window.open('https://github.com/ankush4gupta/screen-viewer', '_blank'); // Replace 'your-github-username' with your actual GitHub username
     };
     const handleSubmit = () => {
         onSubmit(url);
@@ -64,7 +62,7 @@ export default function NavBar({ onButtonClick, onSubmit }: NavbarProps) {
                 </div>
             </div>
             {/* Git-profile section and code repo */}
-            <div className=" cursor-pointer p-2 h-1/2 flex items-center duration-100 ease-in-out hover:ring-blue-600 hover:ring-4 rounded-full transition  hover:bg-white/20 mx-3" onClick={handleRedirect}><FaGithub color="white" size="2.5rem"/></div>
+            <div className=" cursor-pointer p-2 h-1/2 flex items-center duration-100 ease-in-out hover:ring-blue-600 hover:ring-4 rounded-full transition  hover:bg-white/20 mx-3" onClick={handleRedirect}><FaGithub color="white" size="2.5rem" /></div>
         </nav>
     );
 }
