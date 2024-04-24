@@ -1,7 +1,6 @@
 "use client"
-import { useState, useRef } from "react";
+import { useState } from "react";
 import NavBar from "./navbar/page";
-import Image from "next/image";
 export default function Home() {
   const [iframeHeight, setIframeHeight] = useState<string>('600');
   const [iframeWidth, setIframeWidth] = useState<string>('800');
@@ -11,18 +10,13 @@ export default function Home() {
   const handleIframeError = (e:any) => {
     console.log("element",e)
     console.log("error in loading")
-    // setIframeError(true); // Set error state when iframe fails to load
+    
   };
   const handleButtonClick = (height: string, width: string) => {
     console.log(height, width)
     setIframeHeight(height);
     setIframeWidth(width);
   };
-  // const handleSearch = () => {
-  //   if (iframeRef.current && websiteUrl) {
-  //     iframeRef.current.src = websiteUrl;
-  //   }
-  // };
   const handleNavbarUrlSubmit = (url: string) => {
     setWebsiteUrl(url);
   };
@@ -36,8 +30,7 @@ export default function Home() {
             iframeError ? (<p>ERROR</p>) : (<iframe
               src={websiteUrl}
               onError={handleIframeError}
-              // onLoad={handleIframeError}
-              className="shadow-green-600 shadow-2xl rounded"
+              className="shadow-blue-400 shadow-2xl rounded"
               style={{ width: `${iframeWidth}px`, height: `${iframeHeight}px` }}
               title="Preview"
             />)
