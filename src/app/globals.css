@@ -4,7 +4,7 @@
 
 body {
   margin: 0 0;
-  background-image: url('./images/1st.gif');
+  background-image: url('../../public/assets/1st.gif');
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
