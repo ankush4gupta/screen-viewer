@@ -1,10 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Screen Viewer
+Screen Viewer is a simple web application where users can check how websites will look at different screen sizes . It has an option for setting custom screen sizes based on the user's requirements. The sole purpose of building this application is before or after pushing the website or web application to production users can check how there website or web application looks at different screen sizes  
 
-## Getting Started
-
-First, run the development server:
-
+## [[Screen Viewer Link]](https://screen-viewer.vercel.app/)
+## Run Locally :-
 ```bash
+git clone https://github.com/ankush4gupta/
 npm run dev
 # or
 yarn dev
@@ -14,23 +14,20 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Desktop screen button
+- Phone screen button
+- Tab screen button
+- Ipad screen button 
+- Custom height and width setter 
+- Search bar for opening different websites
+- Code repo link
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stacks
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- NEXT.js
+- Tailwind CSS
+- Style Component
+- JavaScript
+- GitHub
